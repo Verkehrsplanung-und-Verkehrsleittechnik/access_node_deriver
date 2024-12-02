@@ -1017,7 +1017,7 @@ $CONNECTOR:{";".join(conn_df.columns).upper()}
             self.Visum.Net.GraphicParameters.Open(Visum_helper_files_path / '20241201_AccessNodeType_Detail.gpa')
             self.Visum.Graphic.DisplayEntireNetwork()
             self.Visum.SaveVersion(debug_ver_file)
-            logging.debug(f"Debug-File saved to: {debug_ver_file}")
+            logging.info(f"Debug-File saved to: {debug_ver_file}")
 
         # Löschen der eingefügten Elemente die im Weiteren nicht benötigt werden
         self.Visum.Net.Matrices.RemoveAll()
@@ -1068,5 +1068,5 @@ $CONNECTOR:{";".join(conn_df.columns).upper()}
         self.Visum.Net.GraphicParameters.Open(Visum_helper_files_path / '20241201_AccessNodeType_Detail.gpa')
         self.Visum.Graphic.DisplayEntireNetwork()
         self.Visum.SaveVersion(final_ver_file)
-        logging.debug(f"Final Version saved to: {final_ver_file}")
-        logging.debug((f"Total number of derived access nodes: {self.Visum.Net.Nodes.CountActive}"))
+        logging.info(f"Final Version saved to: {final_ver_file}")
+        logging.info((f"Total number of derived access nodes: {self.Visum.Net.Nodes.CountActive}"))

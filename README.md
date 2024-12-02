@@ -18,12 +18,11 @@ It processes network data, identifies  specific nodes, and prepares a `.net` fil
       - 4: tertiary  
       - 5: unclassified, residential, road, living_street  
       - 6: service
-
 2. Run the script to process the network and generate results.
 3. Results are imported into Visum by the script in a new version file for further analysis.
 
 ## Requirements
-- PTV Visum software
+- PTV Visum software (2023 1-16)
 - Python 3.x with required dependencies
 
 For more details, refer to the comments in the script.
